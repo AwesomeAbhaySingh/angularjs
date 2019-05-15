@@ -1,0 +1,15 @@
+<script>
+
+var App = angular.module('myApp', ['infinite-scroll']);
+</script>
+
+
+
+<div class="block reloader_block" ng-controller="postController">
+<div infinite-scroll='addMoreItems(1)' infinite-scroll-disabled='reddit.busy' infinite-scroll-distance='1'>
+					<div class="card gedf-card" ng-repeat="x in postResponse">
+          
+          
+          </div>
+         </div>
+         </div>
